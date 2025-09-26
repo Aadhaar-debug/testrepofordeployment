@@ -1,0 +1,127 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+.container {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    max-width: 600px;
+    width: 90%;
+    text-align: center;
+}
+
+h1 {
+    color: #333;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+}
+
+.joke-container {
+    background-color: #f8f9fa;
+    padding: 2rem;
+    border-radius: 10px;
+    margin-bottom: 2rem;
+    min-height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#joke-text {
+    font-size: 1.2rem;
+    color: #333;
+    margin-bottom: 1rem;
+    line-height: 1.5;
+}
+
+#joke-delivery {
+    font-size: 1.2rem;
+    color: #666;
+    font-style: italic;
+    margin-top: 1rem;
+}
+
+.hidden {
+    display: none;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.btn {
+    padding: 0.8rem 1.5rem;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+#get-joke {
+    background-color: #667eea;
+    color: white;
+    font-weight: bold;
+}
+
+#get-joke:hover {
+    background-color: #5a6fd6;
+    transform: translateY(-2px);
+}
+
+.category-buttons {
+    display: flex;
+    gap: 0.5rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.category-btn {
+    background-color: #764ba2;
+    color: white;
+    opacity: 0.8;
+}
+
+.category-btn:hover {
+    opacity: 1;
+    transform: translateY(-2px);
+}
+
+.category-btn.active {
+    opacity: 1;
+    box-shadow: 0 0 0 2px white, 0 0 0 4px #764ba2;
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 1rem;
+    }
+    
+    h1 {
+        font-size: 1.5rem;
+    }
+    
+    .joke-container {
+        padding: 1rem;
+        min-height: 120px;
+    }
+    
+    #joke-text, #joke-delivery {
+        font-size: 1rem;
+    }
+}

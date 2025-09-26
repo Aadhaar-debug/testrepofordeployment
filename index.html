@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Jokes App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Random Jokes Generator</h1>
+        <div class="joke-container">
+            <p id="joke-text">Click the button to get a joke!</p>
+            <p id="joke-delivery" class="hidden"></p>
+        </div>
+        <div class="buttons">
+            <button id="get-joke" class="btn">Get New Joke</button>
+            <div class="category-buttons">
+                <button class="btn category-btn" data-category="Programming">Programming</button>
+                <button class="btn category-btn" data-category="General">General</button>
+                <button class="btn category-btn" data-category="Pun">Pun</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
